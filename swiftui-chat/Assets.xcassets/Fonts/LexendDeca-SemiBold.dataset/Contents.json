@@ -2,7 +2,8 @@
   "data" : [
     {
       "filename" : "LexendDeca-SemiBold.ttf",
-      "idiom" : "universal"
+      "idiom" : "universal",
+      "universal-type-identifier" : "public.truetype-ttf-font"
     }
   ],
   "info" : {

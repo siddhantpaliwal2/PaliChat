@@ -10,11 +10,15 @@ import SwiftUI
 
 struct RootView: View {
     @State var selectedTab:tabs = .contacts;
+    @State var isOnboarding:Bool = !AuthViewModel.isUserLoggedIn();
     var body: some View {
         VStack {
             Spacer();
             CustomTabBar(selectedTab: $selectedTab);
         }
+        .fullScreenCover(isPresented: $isOnboarding, content: {
+            OnboardingContainerView()
+        })
         
     }
 }
