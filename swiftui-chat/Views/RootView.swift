@@ -7,15 +7,15 @@
 
 import SwiftUI
 
+
 struct RootView: View {
+    @State var selectedTab:tabs = .contacts;
     var body: some View {
         VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!").padding().font(Font.customBody)
+            Spacer();
+            CustomTabBar(selectedTab: $selectedTab);
         }
-        .padding()
+        
     }
 }
 

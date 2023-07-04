@@ -15,6 +15,9 @@
 		B1CBD28D2A542F7B0038A27D /* swiftui_chatUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1CBD28C2A542F7B0038A27D /* swiftui_chatUITests.swift */; };
 		B1CBD28F2A542F7B0038A27D /* swiftui_chatUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1CBD28E2A542F7B0038A27D /* swiftui_chatUITestsLaunchTests.swift */; };
 		B1CBD2A22A5439300038A27D /* Fonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1CBD2A12A5439300038A27D /* Fonts.swift */; };
+		B1CBD2A52A5441880038A27D /* CustomTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1CBD2A42A5441880038A27D /* CustomTabBar.swift */; };
+		B1CBD2A82A54427E0038A27D /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1CBD2A72A54427E0038A27D /* Color.swift */; };
+		B1CBD2AA2A5452F50038A27D /* TabBarButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1CBD2A92A5452F50038A27D /* TabBarButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +51,9 @@
 		B1CBD28E2A542F7B0038A27D /* swiftui_chatUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = swiftui_chatUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		B1CBD2A02A54366B0038A27D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		B1CBD2A12A5439300038A27D /* Fonts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fonts.swift; sourceTree = "<group>"; };
+		B1CBD2A42A5441880038A27D /* CustomTabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabBar.swift; sourceTree = "<group>"; };
+		B1CBD2A72A54427E0038A27D /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
+		B1CBD2A92A5452F50038A27D /* TabBarButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,7 +107,8 @@
 				B1CBD2A02A54366B0038A27D /* Info.plist */,
 				B1CBD2702A542F790038A27D /* swiftui_chatApp.swift */,
 				B1CBD29C2A542FCD0038A27D /* Models */,
-				B1CBD29D2A542FD10038A27D /* Model Views */,
+				B1CBD2A32A54416E0038A27D /* ViewModels */,
+				B1CBD29D2A542FD10038A27D /* Views */,
 				B1CBD29F2A542FE30038A27D /* Fonts */,
 				B1CBD29E2A542FDA0038A27D /* Helpers */,
 				B1CBD29B2A542FC10038A27D /* Services */,
@@ -151,18 +158,20 @@
 			path = Models;
 			sourceTree = "<group>";
 		};
-		B1CBD29D2A542FD10038A27D /* Model Views */ = {
+		B1CBD29D2A542FD10038A27D /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				B1CBD2A62A54418D0038A27D /* CustomTabBar */,
 				B1CBD2722A542F790038A27D /* RootView.swift */,
 			);
-			path = "Model Views";
+			path = Views;
 			sourceTree = "<group>";
 		};
 		B1CBD29E2A542FDA0038A27D /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
 				B1CBD2A12A5439300038A27D /* Fonts.swift */,
+				B1CBD2A72A54427E0038A27D /* Color.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -172,6 +181,22 @@
 			children = (
 			);
 			path = Fonts;
+			sourceTree = "<group>";
+		};
+		B1CBD2A32A54416E0038A27D /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		B1CBD2A62A54418D0038A27D /* CustomTabBar */ = {
+			isa = PBXGroup;
+			children = (
+				B1CBD2A42A5441880038A27D /* CustomTabBar.swift */,
+				B1CBD2A92A5452F50038A27D /* TabBarButton.swift */,
+			);
+			path = CustomTabBar;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -304,9 +329,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B1CBD2A52A5441880038A27D /* CustomTabBar.swift in Sources */,
 				B1CBD2732A542F790038A27D /* RootView.swift in Sources */,
 				B1CBD2A22A5439300038A27D /* Fonts.swift in Sources */,
+				B1CBD2A82A54427E0038A27D /* Color.swift in Sources */,
 				B1CBD2712A542F790038A27D /* swiftui_chatApp.swift in Sources */,
+				B1CBD2AA2A5452F50038A27D /* TabBarButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
