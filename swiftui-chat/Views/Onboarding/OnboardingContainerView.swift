@@ -21,9 +21,9 @@ struct OnboardingContainerView: View {
         case .welcome:
             OnboardingWelcome(screen: $screen)
         case .phonenumber:
-            OnboardingPhoneNumber()
+            OnboardingPhoneNumber(screen: $screen)
         case .verification:
-            OnboardingVerification()
+            OnboardingVerification(screen: $screen)
         case .profile:
             OnboardingCreateProfile()
         case .contacts:
