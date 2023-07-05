@@ -21,9 +21,9 @@ struct OnboardingPhoneNumber: View {
                 }
                 Spacer();
                 Button {
-                    if phonenumber.count==10{
+                    
                         screen = .verification
-                    }
+                  
                         
             
                     //code

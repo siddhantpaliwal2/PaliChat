@@ -16,6 +16,7 @@ enum Screens:Int{
 }
 struct OnboardingContainerView: View {
     @State var screen:Screens = .welcome;
+    @Binding var isOnboarding:Bool;
     var body: some View {
         switch screen{
         case .welcome:
@@ -27,13 +28,13 @@ struct OnboardingContainerView: View {
         case .profile:
             OnboardingCreateProfile(screen: $screen)
         case .contacts:
-            OnboardingSyncContacts()
+            OnboardingSyncContacts(isOnboarding: $isOnboarding)
         }
     }
 }
 
 struct OnboardingContainerView_Previews: PreviewProvider {
     static var previews: some View {
-        OnboardingContainerView(screen: .welcome)
+        OnboardingContainerView(screen: .welcome, isOnboarding: .constant(true))
     }
 }

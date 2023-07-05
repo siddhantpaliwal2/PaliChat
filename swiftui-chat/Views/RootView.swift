@@ -17,7 +17,7 @@ struct RootView: View {
             CustomTabBar(selectedTab: $selectedTab);
         }
         .fullScreenCover(isPresented: $isOnboarding, content: {
-            OnboardingContainerView()
+            OnboardingContainerView(isOnboarding: $isOnboarding)
         })
         
     }

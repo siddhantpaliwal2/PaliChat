@@ -29,9 +29,10 @@ struct OnboardingCreateProfile: View {
                 OnboardingTextField(text_state: lastname, preview: "Last Name").padding(EdgeInsets(top: 0, leading: 20, bottom: 20, trailing: 20))
                 Spacer();
                 Button {
-                    if (firstname.isEmpty == false) && (lastname.isEmpty == false){
-                        screen = .profile
-                    }
+                    
+                        screen = .contacts
+                 
+                    
                     //code
                 } label: {
                     
