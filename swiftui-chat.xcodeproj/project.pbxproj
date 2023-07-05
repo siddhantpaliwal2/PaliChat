@@ -37,6 +37,7 @@
 		B1CBD2D22A54AEEC0038A27D /* OnboardingVerification.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1CBD2D12A54AEEC0038A27D /* OnboardingVerification.swift */; };
 		B1CBD2D82A54AF6A0038A27D /* OnboardingCreateProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1CBD2D72A54AF6A0038A27D /* OnboardingCreateProfile.swift */; };
 		B1CBD2DA2A54AF790038A27D /* OnboardingSyncContacts.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1CBD2D92A54AF790038A27D /* OnboardingSyncContacts.swift */; };
+		B1CBD2DC2A55A39E0038A27D /* OnboardingTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1CBD2DB2A55A39E0038A27D /* OnboardingTextField.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -88,6 +89,7 @@
 		B1CBD2D12A54AEEC0038A27D /* OnboardingVerification.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingVerification.swift; sourceTree = "<group>"; };
 		B1CBD2D72A54AF6A0038A27D /* OnboardingCreateProfile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingCreateProfile.swift; sourceTree = "<group>"; };
 		B1CBD2D92A54AF790038A27D /* OnboardingSyncContacts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingSyncContacts.swift; sourceTree = "<group>"; };
+		B1CBD2DB2A55A39E0038A27D /* OnboardingTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingTextField.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -264,6 +266,7 @@
 				B1CBD2BD2A548DE20038A27D /* OnboardingButton.swift */,
 				B1CBD2BF2A5490920038A27D /* OnboardingTitle.swift */,
 				B1CBD2C82A54A8310038A27D /* OnboardingParagraphs.swift */,
+				B1CBD2DB2A55A39E0038A27D /* OnboardingTextField.swift */,
 			);
 			path = "Onboarding Components";
 			sourceTree = "<group>";
@@ -411,6 +414,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B1CBD2DC2A55A39E0038A27D /* OnboardingTextField.swift in Sources */,
 				B1CBD2D82A54AF6A0038A27D /* OnboardingCreateProfile.swift in Sources */,
 				B1CBD2D02A54AED00038A27D /* OnboardingPhoneNumber.swift in Sources */,
 				B1CBD2BE2A548DE20038A27D /* OnboardingButton.swift in Sources */,

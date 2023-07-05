@@ -16,15 +16,16 @@ struct OnboardingPhoneNumber: View {
                 OnboardingTitle(text: "Verification").padding(EdgeInsets(top: 40, leading: 0, bottom: 10, trailing: 0))
                 OnboardingParagraphs(text: "Enter your mobile number below. We’ll send you a verification code shortly.").multilineTextAlignment(.center).padding(EdgeInsets(top: 0, leading: 0, bottom: 30, trailing: 0))
                 ZStack{
-                    
-                        TextField("     e.g. +1 123 123 1234", text: $phonenumber).frame(width:335, height:56).background(Color.white)
-                        
+                    OnboardingTextField(preview: "e.g. 1231231234")
                     Image(systemName: "xmark.circle.fill").foregroundColor(Color.icon_primary).padding(EdgeInsets(top: 0, leading: 275, bottom: 0, trailing: 0))
-                    
                 }
                 Spacer();
                 Button {
-                    screen = .verification
+                    if phonenumber.count==10{
+                        screen = .verification
+                    }
+                        
+            
                     //code
                 } label: {
                     

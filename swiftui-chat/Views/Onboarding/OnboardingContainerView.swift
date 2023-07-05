@@ -25,7 +25,7 @@ struct OnboardingContainerView: View {
         case .verification:
             OnboardingVerification(screen: $screen)
         case .profile:
-            OnboardingCreateProfile()
+            OnboardingCreateProfile(screen: $screen)
         case .contacts:
             OnboardingSyncContacts()
         }
